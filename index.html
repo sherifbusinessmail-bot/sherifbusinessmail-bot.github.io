@@ -1,44 +1,176 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Helion Facility Management</title>
-<style>
-body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:40px auto;padding:0 16px}
-h1{margin-bottom:5px}
-p{color:#444}
-.section{border:1px solid #ddd;border-radius:8px;padding:14px;margin-bottom:14px}
-.btn{display:inline-block;border:1px solid #000;padding:10px 14px;border-radius:8px;text-decoration:none;color:#000;margin-right:8px}
-footer{margin-top:30px;color:#666;font-size:14px}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Helion Facility Management</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="wa-float" href="https://wa.me/201229644866?text=Hello%20Helion%2C%20I%20want%20to%20book%20a%20cleaning%20service." target="_blank" rel="noopener">
+    WhatsApp
+  </a>
 
-<h1>Helion Facility Management</h1>
-<p>Specialized deep cleaning services in Cairo.</p>
+  <header class="top">
+    <div class="wrap top-inner">
+      <img class="logo" src="assets/logo.png" alt="Helion Facility Management logo" />
+      <div class="top-actions">
+        <a class="btn" href="https://wa.me/201229644866?text=Hello%20Helion%2C%20I%20want%20to%20book%20a%20cleaning%20service." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+201229644866">Call</a>
+      </div>
+    </div>
+  </header>
 
-<a class="btn" href="https://wa.me/201070731912">WhatsApp</a>
-<a class="btn" href="https://www.facebook.com/helionservices.me">Facebook</a>
+  <main>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <h1>Specialized deep cleaning in Cairo</h1>
+        <p>Sofas, mattresses, carpets, curtains, AC indoor units, housekeeping.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#quote">Get a quick quote</a>
+          <a class="btn btn-outline" href="#work">See results</a>
+        </div>
+      </div>
+    </section>
 
-<div class="section">
-<h2>Specialized Cleaning</h2>
-<p>Sofas, mattresses, carpets, curtains.</p>
-</div>
+    <section class="section" id="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="grid3">
+          <div class="card">
+            <h3>Upholstery</h3>
+            <p>Sofas and mattresses. Deep extraction. Fast dry.</p>
+          </div>
+          <div class="card">
+            <h3>Carpets and curtains</h3>
+            <p>On-site or pickup based on item. Safe products.</p>
+          </div>
+          <div class="card">
+            <h3>AC indoor units</h3>
+            <p>Split and concealed. Coil, blower, drain clean.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="section">
-<h2>AC Indoor Units</h2>
-<p>Split and concealed AC indoor unit cleaning.</p>
-</div>
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2>Before and after</h2>
+        <div class="gallery">
+          <figure class="shot">
+            <img src="assets/sofa-before.jpg" alt="Before cleaning" />
+            <figcaption>Before</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/sofa-after.jpg" alt="After cleaning" />
+            <figcaption>After</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-<div class="section">
-<h2>Housekeeping</h2>
-<p>Home cleaning, Airbnb preparation, move in and move out cleaning.</p>
-</div>
+    <section class="section" id="testimonials">
+      <div class="wrap">
+        <h2>Client feedback</h2>
+        <div class="grid3">
+          <div class="card">
+            <p class="quote">“On time. Clean result. No mess left behind.”</p>
+            <p class="who">Client, New Cairo</p>
+          </div>
+          <div class="card">
+            <p class="quote">“Sofa smell gone. Fabric looks brighter.”</p>
+            <p class="who">Client, Nasr City</p>
+          </div>
+          <div class="card">
+            <p class="quote">“Professional team and equipment.”</p>
+            <p class="who">Client, Rehab</p>
+          </div>
+        </div>
+        <p class="hint">Send me your real testimonials and I will replace these.</p>
+      </div>
+    </section>
 
-<footer>
-© Helion Facility Management
-</footer>
+    <section class="section" id="quote">
+      <div class="wrap">
+        <h2>Quick booking</h2>
+        <p>Fill this form. It will open WhatsApp with your details.</p>
 
+        <form class="form" id="waForm">
+          <div class="row">
+            <label>
+              Your name
+              <input name="name" required placeholder="Name" />
+            </label>
+
+            <label>
+              Phone
+              <input name="phone" required placeholder="01xxxxxxxxx" />
+            </label>
+          </div>
+
+          <label>
+            Service
+            <select name="service" required>
+              <option value="">Choose</option>
+              <option>Sofa cleaning</option>
+              <option>Mattress cleaning</option>
+              <option>Carpet cleaning</option>
+              <option>Curtain cleaning</option>
+              <option>AC indoor unit cleaning</option>
+              <option>Housekeeping</option>
+            </select>
+          </label>
+
+          <label>
+            Area
+            <input name="area" placeholder="New Cairo, Rehab, Nasr City" />
+          </label>
+
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Items count, size, stains, preferred time"></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send on WhatsApp</button>
+        </form>
+
+        <div class="contact">
+          <a class="btn btn-outline" href="https://wa.me/201229644866" target="_blank" rel="noopener">Open WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+201229644866">Call +20 122 964 4866</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="y"></span> Helion Facility Management</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    document.getElementById("waForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const fd = new FormData(e.target);
+      const name = (fd.get("name") || "").toString().trim();
+      const phone = (fd.get("phone") || "").toString().trim();
+      const service = (fd.get("service") || "").toString().trim();
+      const area = (fd.get("area") || "").toString().trim();
+      const notes = (fd.get("notes") || "").toString().trim();
+
+      const msg =
+        "Hello Helion, I want to book a service.\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Service: " + service + "\n" +
+        (area ? "Area: " + area + "\n" : "") +
+        (notes ? "Notes: " + notes + "\n" : "");
+
+      const url = "https://wa.me/201229644866?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    });
+  </script>
 </body>
 </html>
